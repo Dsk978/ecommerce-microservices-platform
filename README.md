@@ -254,19 +254,22 @@ flowchart LR
 ## Kubernetes Setup
 ```mermaid
 flowchart TD
-    subgraph Kubernetes Cluster
-        subgraph Product Service Pods
-            P1[Pod 1]
-            P2[Pod 2]
-            P3[Pod 3 - auto scaled]
-        end
-        HPA[HPA\nHorizontal Pod Autoscaler\nmin=2 max=10\ntarget CPU 70%]
-        CM[ConfigMaps\nenv variables]
-        SVC[Services\nload balancing]
-        HPA --> Product Service Pods
-        CM --> Product Service Pods
-        SVC --> Product Service Pods
-    end
+    HPA[HPA - Horizontal Pod Autoscaler\nmin=2 max=10 · target CPU 70%]
+    CM[ConfigMaps\nenv variables]
+    SVC[Services\nload balancing]
+    P1[Pod 1]
+    P2[Pod 2]
+    P3[Pod 3 - auto scaled]
+
+    HPA --> P1
+    HPA --> P2
+    HPA --> P3
+    CM --> P1
+    CM --> P2
+    CM --> P3
+    SVC --> P1
+    SVC --> P2
+    SVC --> P3
 ```
 
 HPA automatically adds more pods when CPU exceeds 70% and removes them when
