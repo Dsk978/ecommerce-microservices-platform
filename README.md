@@ -333,4 +333,3 @@ ecommerce-microservices-platform/
 [GitHub](https://github.com/Dsk978)
 ```
 ```
-git push origin master
