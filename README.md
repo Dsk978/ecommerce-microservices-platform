@@ -1,6 +1,6 @@
 # E-Commerce Microservices Platform
 
-> Built by **Sai Krishna Darla** | Java Backend Engineer  
+ 
 > Java 21 · Spring Boot 3.2 · Kafka · React.js · MongoDB · Redis · Keycloak · Docker · Kubernetes
 
 ---
