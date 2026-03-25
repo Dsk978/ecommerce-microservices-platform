@@ -326,7 +326,7 @@ ecommerce-microservices-platform/
 
 ---
 
-## Author
+
 
 **Sai Krishna Darla** — Java Backend Engineer  
 [LinkedIn](https://www.linkedin.com/in/saikrishna-darla/) ·
